@@ -21,13 +21,7 @@
     display: flex;
     justify-content: space-between;
 }
-.links {
-    display: flex;
-    justify-content: flex-end;
-}
-.login {
-    margin-left: 20px;
-}
+
 .header-container {
     color: #5995DA;
     background-color: #D6E9FE;
@@ -36,11 +30,16 @@
 }
 .header {
     width: 900px;
-    height: 300px;
+    height: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
+.profil {
+    font-size: 100px;
+    font-weight: bold; 
+}
+
 .photo-grid-container {
     display: flex;
     justify-content: center;
@@ -56,6 +55,22 @@
     border: 1px solid #fff;
     width: 300px;
     height: 300px;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+}
+.list {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.list-item {
+    width: 300px;
+    height: 450px;
 }
 
 .footer {
