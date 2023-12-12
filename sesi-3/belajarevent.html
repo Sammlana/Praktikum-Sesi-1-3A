@@ -16,10 +16,10 @@
     </h2>
 
     <label for="uji_input">Uji Coba Input</label><br>
-    <input type="text" id="uji_input"><br>
+    <input type="text" id="uji_input" onkeyup="tiru()"><br>
     <span id="uji_span"></span><br>
     <button onclick="klik()">Klik</button>
-    <Button onclick="ulangi">Ulangi</Button>
+    <Button onclick="ulangi()">Ulangi</Button>
 
     <script>
         function sorot(obj) {
@@ -36,7 +36,15 @@
         }
         function Klik() {
             valueInput = document.getElementById('uji_input').value;
-            document.getElementById('uji_span').innerHTML = valueInput;
+            span = document.getElementById('uji_span');
+
+            if (valueInput == "") {
+                span.innerHTML = "Inputan kosong";
+                span.style = "color:red";
+            } else {
+                span.innerHTML = "Input : '"+valueInput+"'";
+                span.style = "color:blue";
+            }
         }
         function ulangi() {
             document.getElementById('uji_input').value = "";
@@ -44,6 +52,10 @@
             document.getElementById('uji_heading').innerHTML = "Sorot dong!";
             document.getElementById('uji_klik').innerHTML = "Klik dong!";
 
+        }
+        function tiru() {
+            valueInput = document.getElementById('uji_input').value;
+            document.getElementById(uji_span).innerHTML = valueInput;
         }
     </script>
 </body>
