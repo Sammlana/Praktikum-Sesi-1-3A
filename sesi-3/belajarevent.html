@@ -18,7 +18,7 @@
     <label for="uji_input">Uji Coba Input</label><br>
     <input type="text" id="uji_input" onkeyup="tiru()"><br>
     <span id="uji_span"></span><br>
-    <button onclick="klik()">Klik</button>
+    <Button onclick="klik()">Klik</Button>
     <Button onclick="ulangi()">Ulangi</Button>
 
     <script>
@@ -34,7 +34,7 @@
         function lepas(obj) {
             obj.innerHTML = "Klik lagi dong!";
         }
-        function Klik() {
+        function klik() {
             valueInput = document.getElementById('uji_input').value;
             span = document.getElementById('uji_span');
 
@@ -55,7 +55,7 @@
         }
         function tiru() {
             valueInput = document.getElementById('uji_input').value;
-            document.getElementById(uji_span).innerHTML = valueInput;
+            document.getElementById('uji_span').innerHTML = valueInput;
         }
     </script>
 </body>
